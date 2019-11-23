@@ -6,13 +6,13 @@ for /d %%i in ("%cd%"\*) do (
     echo "%%i"
     cd "%%i"
     if exist Debug (
-        echo rmdir /S /Q Debug
+        rmdir /S /Q Debug
     )
     if exist .vs (
-        echo rmdir /S /Q .vs
+        rmdir /S /Q .vs
     )
     if exist src/Debug (
-        echo rmdir /S /Q "src/Debug"
+        rmdir /S /Q "src/Debug"
     )
     cd ..
 )
