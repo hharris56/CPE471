@@ -2,7 +2,6 @@
 Title Packaging
 echo Zipping Directories
 
-REM for /d %%i in ("%cd%"\*) do (
 for /d %%i in ("%cd%"\*) do (
     REM zip -r -p %%i
     echo %%i
