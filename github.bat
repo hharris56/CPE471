@@ -6,7 +6,7 @@ set /p message="Enter message (include quotes): "
 CALL clean
 CALL pack
 
-git add *.zip
+git add *.rar
 git commit -m %message%
 git push
 
